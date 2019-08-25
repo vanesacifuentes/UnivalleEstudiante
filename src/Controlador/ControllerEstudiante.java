@@ -171,7 +171,7 @@ public class ControllerEstudiante {
             } else {
                 vista.gestionMensajes(
                         "Actualización Falida",
-                        "Confirmación ", 
+                        "Confirmación ",     
                         JOptionPane.ERROR_MESSAGE);                 
             }              
         } 

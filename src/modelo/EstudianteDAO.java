@@ -76,10 +76,11 @@ public class EstudianteDAO {
             pstm.setString(2, e.getNombre());
             pstm.setString(3, e.getSexo());
             pstm.setString(4, e.getCodigoPrograma());
+            pstm.setString(5, e.getCodigo());
             rtdo = pstm.executeUpdate();  
         }
         catch(SQLException ex){
-            JOptionPane.showMessageDialog(null,"Código : " + 
+            JOptionPane.showMessageDialog(null,"Código hola: " + 
                         ex.getErrorCode() + "\nError :" + ex.getMessage());
         }
         finally{
@@ -87,7 +88,7 @@ public class EstudianteDAO {
                 if(pstm!=null) pstm.close();                
             }
             catch(SQLException ex){
-                JOptionPane.showMessageDialog(null,"Código : " + 
+                JOptionPane.showMessageDialog(null,"Código hola2: " + 
                         ex.getErrorCode() + "\nError :" + ex.getMessage());
             }
         }
